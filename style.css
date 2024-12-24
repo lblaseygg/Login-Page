@@ -134,3 +134,64 @@ button:hover {
     color: var(--primary-color);
     text-decoration: none;
 }
+
+.divider {
+    text-align: center;
+    margin: 1rem 0;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background-color: var(--text-color);
+    opacity: 0.2;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.divider span {
+    background-color: var(--bg-color);
+    padding: 0 10px;
+    color: var(--text-color);
+    opacity: 0.5;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+}
+
+.social-button i {
+    font-size: 1.2rem;
+}
+
+.social-button.google:hover {
+    background-color: #4285f4;
+    color: white;
+}
+
+.social-button.apple:hover {
+    background-color: #000000;
+    color: white;
+}
