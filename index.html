@@ -3,34 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="theme-switch" onclick="toggleTheme()">🌓</div>
+    <label class="theme-switch">
+        <input type="checkbox" onclick="toggleTheme()">
+        <span class="slider"></span>
+    </label>
 
-    <div class=""login-container">
+    <div class="login-container">
         <h1>Welcome Back!</h1>
         <form>
             <div class="input-group">
-                <label for="email"></label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
             </div>
-            <div class="input-group"></div>
-                <label for="password"></label>
-                <input type="password" id="password" required placeholder="Enter your password">
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Password" required>
             </div>
             <button type="submit">Login</button>
         </form>
-        <p class="footer-text">Don't have an account?<a href="#">Sign up</a></p>
+        <p class="footer-text">Don't have an account? <a href="#">Sign up</a></p>
     </div>
-    
-    
-    
 
-
-
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
